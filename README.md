@@ -1,7 +1,7 @@
 # Network Traffic Classification
 
 This repository contains the python scripts, csv and json files required to run the neural network for traffic classification.
-The datasets used in this experiment are the same as the classic available at [1].
+The datasets used in this experiment are the same as the classic paper: Andrew W. Moore and Denis Zuev, "Internet Traffic Classification Using Bayesian Analysis Techniques" available at [1].
 
 ### Setup:
 
