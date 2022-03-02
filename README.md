@@ -1,4 +1,4 @@
-# network-traffic-classification
+# Network Traffic Classification
 
 This repository contains the python scripts, csv and json files required to run the neural network for traffic classification.
 The datasets used in this experiment are the same as the classic available at [1].
