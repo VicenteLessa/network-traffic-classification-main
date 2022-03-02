@@ -1,0 +1,1 @@
+{"datetime": "2022-02-05", "training_dataset_shape": [24863, 6], "test_dataset_shape": [23801, 6], "attributes": ["83", "82", "79", "22", "90", "84"], "number_of_attributes": 6, "accuracy_train": 0.9642681837081909, "accuracy_test": 0.9460148721933365}
