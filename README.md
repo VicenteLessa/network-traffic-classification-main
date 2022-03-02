@@ -7,7 +7,7 @@ The datasets used in this experiment are the same as the classic paper: Andrew W
 
 1- Clone this repository.
 
-2- Upload the folder to your google drive main folder(If you want to use another directory scheme, just make sure to adequate the codes to point to the csv and json files).
+2- Upload the folder to your google drive main folder (If you want to use another directory scheme, just make sure to adequate the codes to point to the csv and json files).
 
 3- Upload the python scripts to google colab. 
 
@@ -19,11 +19,11 @@ Feature Importance scripts:
 
 1.1- NN feature importance using permutations.ipynb: 
 
-This adapted algorithm described in [2] trains the NN with all attributes and test it a first time to have a reference accuracy score. Then, for each attribute, the test dataset multiples times applying the shuffling technique. The shuffling technique consists in choosing an attribute and shuffling it's values (by randomly switching places). The NN runs multiples times to have multiples shuffles for each attribute. A mean of the test accuracy score is taken for each shuffled attribute and compared to the reference score. The ideia is that more significant attributes should have a lower the score then less significant ones, because of the shuffling. Now we have a list of attributes corresponding to the sorted(crescent) accuracy scores.
+This adapted algorithm described in [2] trains the NN with all attributes and test it a first time to have a reference accuracy score. Then, for each attribute, the test dataset is tested multiples times applying the shuffling technique. The shuffling technique consists in choosing an attribute and shuffling it's values (by randomly switching places). The NN runs multiples times to have multiples shuffles for each attribute. A mean of the test accuracy score is taken for each shuffled attribute and compared to the reference score. The ideia is that more significant attributes should have a lower the score then less significant ones, because of the shuffling. Now we have a list of attributes corresponding to the sorted(crescent) accuracy scores.
 
 1.2- NN feature importance using attributes weights.ipynb: 
 
-In this NN, nodes are densely connected, this means that every normalized input node is connected to every node in the first hidden layer. The assumption used here is that nodes in the input layer with bigger (or lower!) connection weights should be more significant to the NN. This adapted algorithm described in [3] trains and tests the NN with all attributes. Then, for the first node, is made the sum of the connection weights between the normalized inputs layer and the first hidden layer. This is repeated for every node, resulting in a list of attributes associated with it's corresponding sum of connection weights. this list is crescent sorted by the connection weights.
+In this NN, nodes are densely connected, this means that every normalized input node is connected to every node in the first hidden layer. The assumption used here is that nodes in the input layer with bigger (or lower!) connection weights should be more significant to the NN. This adapted algorithm described in [3] trains and tests the NN with all attributes. Then, for the first node, is made the sum of the connection weights between the normalized inputs layer and the first hidden layer. This is repeated for every node, resulting in a list of attributes associated with it's corresponding sum of connection weights. this list is crescent, sorted by the connection weights.
 
 
 Main Script:
